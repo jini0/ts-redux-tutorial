@@ -1,24 +1,18 @@
+// 7.28
+// 설치 
+// 1. npm install redux		    --> node_modules에  redux폴더 살펴보기 --> .ts로 끝나는 애가 있음(index.d.ts) --> typescript를 지원하는 애임!
+// 2. npm install react-redux	--> node_modules에  redux폴더 살펴보기 --> .ts로 끝나는 애가 없음 --> typescript를 지원하지 않는 애임! 
+// 			                      ==> 그래서 typescript 적용되도록 설치 해줘야함 -->npm install @types/react-redux 설치해주기!!
+// 3. npm install @types/react-redux
+
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ContainerCounter from './containers/ContainerCounter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ContainerCounter/>
     </div>
   );
 }

@@ -3,13 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// 7.28
+import { createStore } from 'redux';
+import rootReducer from './modules';
+import { Provider } from 'react-redux';
 
+// 스토어 만들기 (7.28)
+const store = createStore(rootReducer);
+ 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    {/* 💚Provider로 감싸주기!💚 */}
+    <Provider store={store}>
     <App />
+    </Provider>
   </React.StrictMode>
 );
 

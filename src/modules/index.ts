@@ -2,6 +2,7 @@
 import { combineReducers } from "redux";
 import counter from "./counter";
 // 7.29
+// import todos from "./todos";
 import todos from "./todos";
 
 const rootReducer = combineReducers({ counter, todos });        // 7.29 todos 추가

@@ -3,6 +3,7 @@
 //2. 액션생성함수
 //3. 초기값
 //4. 리듀서 만들기
+//💚render 랜더하는 애가 없으면 확장자명을 .tsx가 아니고 .ts라고 해도 된다!! ---> 그래서 modules폴더 내에는 확장자명 다 .ts 해도 됨!!!💚
 
 //✔액션타입
 const INCREASE = "counter/INCREASE" as const;   // as const를 안해주면 액션생성함수의 increase에 마우스를 갖다대면 type: string으로 되어있음!

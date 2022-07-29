@@ -4,8 +4,10 @@ import counter from "./counter";
 // 7.29
 // import todos from "./todos";
 import todos from "./todos";
+//추가 💖
+import github from "./github";
 
-const rootReducer = combineReducers({ counter, todos });        // 7.29 todos 추가
+const rootReducer = combineReducers({ counter, todos, github });        // 7.29 todos 추가
 export default rootReducer;
 
 //rootReducer얘를 불러쓸 건데 얘가 리턴해주는 애의 타입을 지정해준거

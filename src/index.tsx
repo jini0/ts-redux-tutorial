@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // 7.28
-import { createStore } from 'redux';
+import { applyMiddleware, createStore } from 'redux';     // 7.29 applyMiddleware 추가 - 미들웨어 적용하기💖
 import rootReducer from './modules';
 import { Provider } from 'react-redux';
+// 7.29
+import Thunk from 'redux-thunk';
 
 // 스토어 만들기 (7.28)
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(Thunk));   //Thunk 추가 / 미들웨어 추가 💖
  
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
